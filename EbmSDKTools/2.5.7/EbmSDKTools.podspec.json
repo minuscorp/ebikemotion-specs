@@ -1,0 +1,55 @@
+{
+  "name": "EbmSDKTools",
+  "version": "2.5.7",
+  "license": {
+    "type": "Commercial",
+    "text": "see http://www.skobbler.com/legal#termsSDK"
+  },
+  "summary": "Utility library for the Scout Maps & Navigation SDK",
+  "description": "The utility library offers an out-of-the box Navigation UI for TBT navigation and advanced control over the experience of downloading maps",
+  "homepage": "http://developer.skobbler.com/getting-started/iosTools",
+  "authors": {
+    "Telenav Inc.": "http://www.telenav.com/about/"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "http": "https://dl.dropboxusercontent.com/s/5ooaiajtkv4w4xp/EbmSDKTools_2.5.5.zip?dl=0"
+  },
+  "requires_arc": true,
+  "resources": "SDKTools/Resources/SKTNavigationResources.bundle",
+  "frameworks": [
+    "AVFoundation",
+    "CoreTelephony"
+  ],
+  "documentation_url": "http://developer.skobbler.com/getting-started/ios",
+  "default_subspec": "Core",
+  "dependencies": {
+    "Reachability": [
+
+    ],
+    "ZipArchive": [
+
+    ],
+    "AFNetworking": [
+      "~> 2.0"
+    ]
+  },
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "\"$(PODS_ROOT)/EbmSKMaps/**\""
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "SDKTools/**/*.{h,m,c}",
+      "prefix_header_file": "SDKTools/SDKTools-Prefix.pch",
+      "requires_arc": true,
+      "public_header_files": "SDKTools/**/*.h",
+      "dependencies": {
+        "EbmSKMaps/Core": [
+        ]
+      }
+    }
+  ]
+}
