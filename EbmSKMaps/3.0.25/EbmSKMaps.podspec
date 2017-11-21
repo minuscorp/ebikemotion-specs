@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/minuscorp/EbmSKMaps'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'minuscorp' => 'jrevuelta@usal.es' }
-  s.source           = { :http => 'https://dl.dropboxusercontent.com/s/r8tf4bdm6ah0ic7/SKMaps-3.0.22.zip?dl=0' }
+  s.source           = { :http => 'https://dl.dropboxusercontent.com/s/nau6w2j8iu3efoe/SKMaps-3.0.22.zip?dl=0' }
   s.social_media_url = 'https://twitter.com/minuscorp'
 
   s.platform = :ios
